@@ -1,0 +1,280 @@
+/* active link - #36797E*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height:100%;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  color:darkgrey;
+  background-color:white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color:#36797E;
+  transition: all .3s linear;
+  text-decoration: underline;
+}
+
+                              /*GLOBAL STYLES*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+/*h1, h2{
+  margin:.5em 0;
+}*/
+
+.underline {
+  margin:0 auto;
+  width:10em;
+  border:1px solid;
+  margin-bottom: 3em;
+}
+
+                              /*SECTION STYLES*/
+
+section {
+  padding: 5em 0;
+}
+
+section h2 {
+  /*display:inline-block;*/
+  margin-bottom:0 0 .3em 0;
+  /*padding-bottom: .3em;*/
+/*  border-bottom: 3px solid;*/
+}
+
+                            /*NAV STYLES*/
+
+nav {
+  background-color: transparent;
+  height:5em;
+  z-index: 5;
+  transition: all .6s linear;
+}
+
+.navbar-brand {
+  font-size: 3.5em;
+  transition: all .6s linear;
+  margin-right:0;
+}
+/*nav styles after scroll*/
+.brand-hide {
+  /*opacity:0;*/
+  /*display:none;*/
+  order:-1;
+  font-size:1em;
+}
+
+/*this hides the MC in the hamburger menu*/
+@media screen and (max-width: 767px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, .3)
+  }
+}
+.nav-after-scroll {
+  /*background-color: #1D433F;*/
+  background-color: rgba(0, 0, 0, .8);
+  height:3em;
+}
+/*end nav styles after scroll*/
+
+nav i {
+  color: white;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active-link {
+  color:#36797E;
+  text-decoration: underline;
+}
+
+                              /*HEADER STYLES*/
+header {
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.header-bg {
+  position: absolute;
+  height:100%;
+  width:100%;
+  background-image: url('../images/jakob-owens-1278224-unsplash.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  /*filter: blur(2px);*/
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header-text{
+  z-index: 1;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  /*Animating margin-bottom */
+  opacity: 0;
+  animation: fade-in-and-up 2s linear forwards;
+  animation-delay: 1s;
+  color:white;
+}
+
+.header-text h2, .header-text h1 {
+  margin: .3em;
+}
+
+header .underline {
+  margin:0 auto;
+  width:18em;
+  border:1px solid;
+  /*margin-bottom: 3em;*/
+}
+
+.header-arrow {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  font-size: 2em;
+  margin-bottom: 1em;
+  animation: down-arrow 2s infinite;
+  animation-delay: 3s;
+  opacity: 0;
+  /*LEFT OFF HERE*/
+}
+
+                              /*ABOUT STYLES*/
+
+.about {
+  text-align: center;
+}
+
+
+.about-text {
+
+}
+
+.about-image {
+  height: 30em;
+  width: 30em
+  /*background-color: red;*/
+}
+
+                              /*DEV PORTFOLIO*/
+#portfolio {
+  background-color:#36797E;
+}
+
+#portfolio h2, #portfolio .underline {
+  color: white;
+}
+
+.carousel-item img{
+  max-height:20em;
+}
+
+
+/*.portfolio-item img {
+  width:100%;
+  height:100%;
+}*/
+
+                            /*TESTIMONIALS*/
+
+#testimonials {
+  height:25em;
+/*  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+}
+
+                /*FOOTER*/
+#contact {
+  color: white;
+  background-color: #1d433f;
+  /*height:18em;*/
+}
+
+#contact-form div {
+  margin-bottom: .5em;
+}
+
+.contact-text {
+  height: 100%;
+/*  padding-top: 1em;*/
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-icons {
+  font-size:1.9em;
+}
+
+.social-icons a {
+  margin-right: .4em;
+}
+
+#emailtextarea {
+  width:100%;
+}
+
+                              /*ANIMATIONS*/
+@keyframes down-arrow {
+    0%{
+        opacity: 0;
+        margin-bottom: 1em;
+    }
+    50%{
+        opacity: 1;
+        margin-bottom: 0
+    }
+    100%{
+        opacity: 0;
+        margin-bottom: 1em;
+    }
+}
+
+@keyframes fade-in-and-up {
+    0%{
+        opacity: 0;
+        margin-bottom: -1em;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+        margin-bottom: 3em;
+    }
+}
+
+

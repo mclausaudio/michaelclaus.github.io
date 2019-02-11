@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Michael Claus</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <!-- USING BORDER CLASS ON ELEMENTS TO SEE OUTLINE AND POSITIONING -->
+    <nav class="navbar fixed-top navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav d-flex justify-content-around w-100">
+                <a id="about-link" class="nav-item nav-link" href="#">About</a>
+                <a id="portfolio-link" class="nav-item nav-link" href="#">Portfolio</a>
+                <!-- why does below not hide while collapse... .hidden-xs??? -->
+                <a id="nav-logo" class="navbar-brand d-none d-sm-none d-md-block" href="#">MC</a>
+                <a id="testimonials-link" class="nav-item nav-link" href="#">Testimonials</a>
+                <a id="contact-link" class="nav-item nav-link" href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header-bg"></div>
+        <div class="overlay"></div>
+        <div class="header-text">
+            <h1>Michael Claus</h1>
+            <div class="underline"></div>
+            <h2>Full Stack Developer</h2>
+        </div>
+        <div class="header-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="about container">
+            <h2 class="section-header">About</h2>
+            <div class="underline"></div>
+            <div class="row">
+                <div class="col-md-6 about-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos earum dicta cumque, explicabo dolorum rem temporibus aperiam veritatis labore eum inventore repellendus ipsum laborum. Minus iste, ut perferendis sequi!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos earum dicta cumque, explicabo dolorum rem temporibus aperiam veritatis labore eum inventore repellendus ipsum laborum. Minus iste, ut perferendis sequi!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos earum dicta cumque, explicabo dolorum rem temporibus aperiam veritatis labore eum inventore repellendus ipsum laborum. Minus iste, ut perferendis sequi!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quos earum dicta cumque, explicabo dolorum rem temporibus aperiam veritatis labore eum inventore repellendus ipsum laborum. Minus iste, ut perferendis sequi!</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/7-seth-1272540-unsplash.jpg" class=" about-image">
+                </div>
+                </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-header">Portfolio</h2>
+                <div class="underline"></div>
+
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+
+                  <!-- The slideshow -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/placeimg_640_480_tech.jpg" alt="Project 1">
+                      <div class="carousel-caption">
+                          <h2>Title of project 1</h2>
+                          <p>Here is a brief description of my first portfolio item which includes the technology stack used.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/placeimg_640_480_tech.jpg" alt="Project 2">
+                      <div class="carousel-caption">
+                          <h2>Title of project 2</h2>
+                          <p>Here is a brief description of my second portfolio item which includes the technology stack used.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="images/placeimg_640_480_tech.jpg" alt="Project 3">
+                      <div class="carousel-caption">
+                          <h2>Title of project 3</h2>
+                          <p>Here is a brief description of my third portfolio item which includes the technology stack used.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+<!-- Modals -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <a class="" data-fancybox="gallery" href="images/placeimg_640_480_tech.jpg">
+                      <img class="mt-3 img-thumbnail" src="images/placeimg_640_480_tech.jpg">
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a class="" data-fancybox="gallery" href="images/placeimg_640_480_tech.jpg">
+                      <img class="mt-3 img-thumbnail" src="images/placeimg_640_480_tech.jpg">
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a class="" data-fancybox="gallery" href="images/placeimg_640_480_tech.jpg">
+                      <img class="mt-3 img-thumbnail" src="images/placeimg_640_480_tech.jpg">
+                    </a>
+                  </div>
+                </div>
+        </section>
+        <section id="testimonials" class="container">
+
+            <h2 class="section-header">Testimonials</h2>
+            <div class="underline"></div>
+            <div class="testimonials-container">
+                <div id="testimonial1" class="testimonial-quote">
+                    <p>Web Development</p>
+                    <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </div>
+                <div id="testimonial2" class="testimonial-quote">
+                    <p>Web Development 2</p>
+                    <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </div>
+                <div id="testimonial3" class="testimonial-quote">
+                    <p>Web Development 3</p>
+                    <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="underline"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="contact-text">
+                    <div>
+                      <p>Working on something cool or have an idea for a project?  Let me know!  I'm always open to learning more about new and interesting projects.</p>
+                    </div>
+                      <div class="social-icons">
+                          <a href="mailto:mclausaudio@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                          <a href="https://github.com/mclausaudio" target="_blank"><i class="fab fa-github"></i></a>
+                          <a href="https://www.linkedin.com/in/michael-claus-a2a5aab2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                          <a href="https://twitter.com/SynthHerder" target="_blank"><i class="fab fa-twitter"></i></a>
+                          <a href="https://soundcloud.com/michael-claus" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                          <a href=https://bandcamp.com/SynthProgrammer" target="_blank"><i class="fab fa-bandcamp"></i></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <form id='contact-form'class='form-group'>
+                      <div class="form-row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col">
+                          <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <textarea name="emailBody" id="emailtextarea" class='form-control' rows="5" placeholder="Send me an email!"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <button type="submit" class="btn btn-secondary btn-block">Send</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/testimonials.js"></script>
+    <script type="text/javascript" src="js/modallightbox.js"></script>
+</body>
+
+</html>
